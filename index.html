@@ -365,7 +365,7 @@ body {
       <div class="stat-label">Uptime</div>
     </div>
     <div class="stat-card" style="left:50%;top:48%;transform:translateX(-50%);">
-      <div class="stat-num" style="color:#4db8ff;" id="devices-num">12.847</div>
+      <div class="stat-num" style="color:#4db8ff;" id="devices-num">50.000</div>
       <div class="stat-label">Dispositivi connessi</div>
     </div>
   </div>
@@ -567,7 +567,7 @@ function animateDevices(){
   const el = $('devices-num');
   if(!el) return;
   setInterval(()=>{
-    const base = 12847 + Math.floor(Math.random()*80 - 40);
+    const base = 50000 + Math.floor(Math.random()*800 - 400);
     el.textContent = base.toLocaleString('it-IT');
   }, 2000);
 }
